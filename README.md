@@ -9,20 +9,20 @@ To use our service, you can follow these steps:
 1. **Clone the Repository**:
 
    ```bash
-   git clone https://github.com/yourusername/infotrixs.git
+   git clone https://github.com/vishwajeet7381/infotrixs.git
    ```
 
 2. **Create a Virtual Environment and Activate It**:
 
-  ```bash
-  python3 -m venv .venv
-  source .venv/bin/activate
-  ```
+    ```bash
+    cd infotrixs
+    python3 -m venv .venv
+    source .venv/bin/activate
+    ```
 
 3. **Install Dependencies**:
 
    ```bash
-   cd quote-of-the-day
    python -m pip install -r requirements.txt
    ```
 
@@ -90,4 +90,4 @@ Feel free to contribute to this project by submitting issues or pull requests. W
 
 This project is licensed under the MIT License.
 
-Enjoy using our Quote of the Day service!
+_Enjoy using our Quote of the Day service!_
