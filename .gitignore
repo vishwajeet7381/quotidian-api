@@ -10,8 +10,9 @@ __pycache__
 # Ignore database files
 *.db
 
-# Ignore IDE/Editor specific files
+# Ignore Editor specific files
 .vscode/
+*.code-workspace
 
 # Ignore pycache directories
 __pycache__/
