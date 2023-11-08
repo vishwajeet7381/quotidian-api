@@ -1,4 +1,4 @@
-# Quote of the Day Service
+# Quote of the Day
 
 Welcome to the Quote of the Day service. This service provides you with a random quote of the day and allows you to manage a collection of quotes, including adding, updating, deleting, and searching by author. This `README.md` file is designed to help you get started with using our service.
 
@@ -9,17 +9,24 @@ To use our service, you can follow these steps:
 1. **Clone the Repository**:
 
    ```bash
-   git clone https://github.com/yourusername/quote-of-the-day-service.git
+   git clone https://github.com/yourusername/infotrixs.git
    ```
 
-2. **Install Dependencies**:
+2. **Create a Virtual Environment and Activate It**:
+
+  ```bash
+  python3 -m venv .venv
+  source .venv/bin/activate
+  ```
+
+3. **Install Dependencies**:
 
    ```bash
-   cd quote-of-the-day-service
-   pip install -r requirements.txt
+   cd quote-of-the-day
+   python -m pip install -r requirements.txt
    ```
 
-3. **Run the Service**:
+4. **Run the Service**:
 
    ```bash
    python app.py
@@ -81,6 +88,6 @@ Feel free to contribute to this project by submitting issues or pull requests. W
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+This project is licensed under the MIT License.
 
 Enjoy using our Quote of the Day service!
