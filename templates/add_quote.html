@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Add a Quote</title>
+</head>
+<body>
+    <h1>Add a Quote</h1>
+    <form id="quote-form">
+        <label for="author">Author:</label>
+        <input type="text" name="author" id="author" required><br>
+
+        <label for="content">Content:</label>
+        <textarea name="content" id="content" rows="4" required></textarea><br>
+
+        <input type="submit" value="Add Quote">
+    </form>
+
+    <p id="form-feedback"></p>
+
+    <script>
+        // Add an event listener to the form submission
+        document.getElementById('quote-form').addEventListener('submit', function(event) {
+            event.preventDefault();
+
+            // Get the form data
+            const author = document.getElementById('author').value;
+            const content = document.getElementById('content').value;
+            const data = { author, content };
+
+            // Disable the submit button to prevent multiple submissions
+            document.getElementById('quote-form').querySelector('input[type="submit"]').disabled = true;
+
+            // Send the data to the API as JSON
+            fetch('/quotes', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify(data)
+            })
+            .then(response => response.json())
+            .then(result => {
+                // Handle the API response
+                if (result.message) {
+                    // Provide feedback to the user
+                    document.getElementById('form-feedback').textContent = result.message;
+                }
+            })
+            .finally(() => {
+                // Enable the submit button after the request is complete
+                document.getElementById('quote-form').querySelector('input[type="submit"]').disabled = false;
+            });
+        });
+    </script>
+</body>
+</html>
