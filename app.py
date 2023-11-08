@@ -1,6 +1,6 @@
 import sqlite3
 
-from flask import Flask, g, jsonify, request
+from flask import Flask, g, jsonify, render_template, request
 
 app = Flask(__name__)
 
@@ -49,6 +49,12 @@ def get_quote_of_the_day():
         return jsonify({"id": quote[0], "author": quote[1], "content": quote[2]})
     else:
         return jsonify({"message": "No quotes available"})
+
+
+# Serve the HTML form for adding a quote
+@app.route("/add-quote", methods=["GET"])
+def add_quote_form():
+    return render_template("add_quote.html")
 
 
 # Get all quotes or add a new quote
