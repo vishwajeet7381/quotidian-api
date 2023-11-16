@@ -1,6 +1,6 @@
 # Quotidian API
 
-Welcome to the Quotidian API service. This service provides you with a random quote of the day and allows you to manage a collection of quotes, including adding, updating, deleting, and searching by author. This `README.md` file is designed to help you get started with using our service.
+Welcome to the QuotidianAPI service. This service provides you with a random quote of the day and allows you to manage a collection of quotes, including adding, updating, deleting, and searching by author. This `README.md` file is designed to help you get started with using our service.
 
 ## Getting Started
 
@@ -15,7 +15,7 @@ To use our service, you can follow these steps:
 2. **Create a Virtual Environment and Activate It**:
 
     ```bash
-    cd infotrixs
+    cd quotidian-api
     python3 -m venv .venv
     source .venv/bin/activate
     ```
@@ -90,4 +90,4 @@ Feel free to contribute to this project by submitting issues or pull requests. W
 
 This project is licensed under the MIT License.
 
-_Enjoy using our Quotidian API service!_
+_Enjoy using our QuotidianAPI service!_
