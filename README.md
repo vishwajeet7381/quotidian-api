@@ -1,6 +1,6 @@
-# Quote of the Day
+# Quotidian API
 
-Welcome to the Quote of the Day service. This service provides you with a random quote of the day and allows you to manage a collection of quotes, including adding, updating, deleting, and searching by author. This `README.md` file is designed to help you get started with using our service.
+Welcome to the Quotidian API service. This service provides you with a random quote of the day and allows you to manage a collection of quotes, including adding, updating, deleting, and searching by author. This `README.md` file is designed to help you get started with using our service.
 
 ## Getting Started
 
@@ -9,7 +9,7 @@ To use our service, you can follow these steps:
 1. **Clone the Repository**:
 
    ```bash
-   git clone https://github.com/vishwajeet7381/infotrixs.git
+   git clone https://github.com/vishwajeet7381/quotidian-api.git
    ```
 
 2. **Create a Virtual Environment and Activate It**:
@@ -90,4 +90,4 @@ Feel free to contribute to this project by submitting issues or pull requests. W
 
 This project is licensed under the MIT License.
 
-_Enjoy using our Quote of the Day service!_
+_Enjoy using our Quotidian API service!_
